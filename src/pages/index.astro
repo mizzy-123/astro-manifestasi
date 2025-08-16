@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+import { Header } from "../components/common/Header.tsx"
+import HeroSection from "../components/sections/HeroSection.astro"
+import WhySection from "../components/sections/WhySection.astro"
+
+---
+
+<BaseLayout pageTitle="home">
+	<Header client:load></Header>
+	<HeroSection />
+	<WhySection />
+</BaseLayout>

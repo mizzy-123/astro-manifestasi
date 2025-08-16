@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant light (&:where(.light, .light *));
+
+@font-face {
+  font-family: "poppins";
+  src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "plusjakartaregular";
+  src: url("../assets/fonts/PlusJakartaSans-Regular.ttf") format("truetype");
+}
+
+@theme {
+  --breakpoint-mobile: 20rem;
+  --color-background2: #1c1e1e;
+  --color-background1: #f0f0f0;
+  --color-font-white: #f9f8f8;
+  --color-color-main: #9275f7;
+  --font-poppins: "poppins", sans-serif;
+  --font-plusjakartaregular: "plusjakartaregular", sans-serif;
+}
+
+@layer base {
+  @keyframes scrollX {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}

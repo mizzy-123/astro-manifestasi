@@ -1,0 +1,48 @@
+---
+import { HeroFooter } from "../common/HeroFooter";
+import { HeroStatusCount } from "../common/HeroStatusCount";
+
+---
+
+
+<section class="relative w-full h-screen">
+  <div class="absolute bottom-0 left-0">
+    <svg xmlns="http://www.w3.org/2000/svg" width="210" height="562" viewBox="0 0 210 562" fill="none">
+      <g filter="url(#filter0_f_50_696)">
+        <path d="M75 281C75 361.634 6.05186 427 -79 427C-164.052 427 -233 361.634 -233 281C-233 200.366 -164.052 135 -79 135C6.05186 135 75 200.366 75 281Z" fill="#643DE5" fill-opacity="0.4"/>
+      </g>
+      <defs>
+        <filter id="filter0_f_50_696" x="-367.6" y="0.399994" width="577.2" height="561.2" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+          <feGaussianBlur stdDeviation="67.3" result="effect1_foregroundBlur_50_696"/>
+        </filter>
+      </defs>
+    </svg>
+  </div>
+  <div class="absolute right-0 top-0">
+    <svg xmlns="http://www.w3.org/2000/svg" width="188" height="546" viewBox="0 0 188 546" fill="none">
+      <g filter="url(#filter0_f_50_700)">
+        <path d="M443 265C443 345.634 374.052 411 289 411C203.948 411 135 345.634 135 265C135 184.366 203.948 119 289 119C374.052 119 443 184.366 443 265Z" fill="#643DE5" fill-opacity="0.4"/>
+      </g>
+      <defs>
+        <filter id="filter0_f_50_700" x="0.399994" y="-15.6" width="577.2" height="561.2" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+          <feGaussianBlur stdDeviation="67.3" result="effect1_foregroundBlur_50_700"/>
+        </filter>
+      </defs>
+    </svg>
+  </div>
+  <div class="w-full absolute top-1/2 -translate-y-1/2">
+    <div class="w-full flex flex-col items-center gap-8">
+      <h1 class="sm:w-[75%] mobile:w-[80%] font-plusjakartaregular text-font-white sm:text-[40px] mobile:text-2xl text-center font-bold">Ahlinya Bangun <span class="text-color-main">Website</span> dan <span class="text-color-main">Aplikasi</span> dengan Design yang Friendly</h1>
+      <p class="sm:w-[60%] mobile:w-[80%] font-poppins text-center text-font-white sm:text-[20px] mobile:text-[12px]">Tempat jasanya Website, dan Aplikasi dengan harga yang terjangkau, yang pastinya kepuasan anda adalah prioritas kami</p>
+      <a class="sm:w-[25%] mobile:w-[80%] h-[54px] bg-gradient-to-r from-[#754DFB] to-[#452E95] p-2.5 rounded-[10px] flex justify-center items-center" href="#">
+        <p class="w-full text-center font-poppins sm:text-[16px] mobile:text-[12px] font-bold text-font-white">Mulai Proyek Digital Anda Sekarang</p>
+      </a>
+    </div>
+    <HeroStatusCount client:load />   
+  </div>
+  <HeroFooter/>
+</section>
