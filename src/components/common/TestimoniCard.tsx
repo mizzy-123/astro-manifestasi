@@ -88,9 +88,16 @@ export default function TestimoniCard() {
         {Array.from({ length: totalCards }).map((_, i) => (
           <div
             key={i}
-            className="shrink-0 flex flex-col w-[318px] h-[195px] rounded-xl bg-[rgba(69,66,66,0.20)] backdrop-blur-md border border-white/10 overflow-hidden"
+            className="shrink-0 flex flex-col w-[318px] h-[195px] rounded-xl bg-[rgba(69,66,66,0.20)] backdrop-blur-md border border-white/10 overflow-hidden px-[13px]"
           >
-            <p className="text-white text-center m-auto">Card {i + 1}</p>
+            <div className="my-auto w-full flex flex-col gap-6">
+              <p className="text-[#E9E2E2] text-center text-[16px] font-poppins">
+                Sangat membantu dalam pengerjaan good job
+              </p>
+              <p className="font-poppins text-[13px] text-[#E9E2E2] text-center">
+                Rani
+              </p>
+            </div>
           </div>
         ))}
       </div>

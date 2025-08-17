@@ -7,6 +7,7 @@ import ServiceSection from "../components/sections/ServiceSection.astro"
 import PortfolioSection from "../components/sections/PortfolioSection.astro"
 import FaqSection from "../components/sections/FaqSection.astro"
 import TestimoniSection from "../components/sections/TestimoniSection.astro"
+import Footer from "../components/common/Footer"
 
 ---
 
@@ -18,4 +19,5 @@ import TestimoniSection from "../components/sections/TestimoniSection.astro"
 	<PortfolioSection />
 	<FaqSection />
 	<TestimoniSection />
+	<Footer client:load />
 </BaseLayout>

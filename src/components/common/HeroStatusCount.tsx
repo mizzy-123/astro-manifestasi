@@ -113,7 +113,7 @@ export function HeroStatusCount() {
     <div className="text-white py-6">
       <div className="max-w-4xl mx-auto flex justify-center divide-x divide-font-white">
         {/* <!-- Item 1 --> */}
-        <div className="px-6 text-center">
+        <div className="sm:px-6 mobile:px-4 text-center">
           <p className="font-poppins text-2xl">{countProject}+</p>
           <div className="flex flex-col items-center">
             <p className="font-poppins text-[12px]">Project</p>
@@ -122,7 +122,7 @@ export function HeroStatusCount() {
         </div>
 
         {/* <!-- Item 2 --> */}
-        <div className="px-6 text-center">
+        <div className="sm:px-6 mobile:px-4 text-center">
           <p className="font-poppins text-2xl">{countSatisfaction}%</p>
           <div className="flex flex-col items-center">
             <p className="font-poppins text-[12px]">Kepuasan</p>
@@ -131,7 +131,7 @@ export function HeroStatusCount() {
         </div>
 
         {/* <!-- Item 3 --> */}
-        <div className="px-6 text-center">
+        <div className="sm:px-6 mobile:px-4 text-center">
           <p className="font-poppins text-2xl">{countExperience}+</p>
           <div className="flex flex-col items-center">
             <p className="font-poppins text-[12px]">Tahun</p>
