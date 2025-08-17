@@ -24,7 +24,7 @@
   --font-plusjakartaregular: "plusjakartaregular", sans-serif;
 }
 
-@layer base {
+@layer utilities {
   @keyframes scrollX {
     0% {
       transform: translateX(0);
@@ -32,5 +32,14 @@
     100% {
       transform: translateX(-50%);
     }
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE dan Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }

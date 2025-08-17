@@ -33,7 +33,10 @@ export default function FaqContent() {
   return (
     <div className="w-full grid sm:grid-cols-2 mobile:grid-cols-1 gap-8">
       {faqs.map((faq, index) => (
-        <div className="w-full h-fit bg-[#353333] rounded-[10px] overflow-hidden">
+        <div
+          key={index}
+          className="w-full h-fit bg-[#353333] rounded-[10px] overflow-hidden"
+        >
           <button
             onClick={() => toogleFaq(index)}
             className="flex items-center justify-between w-full h-[63px] px-6"
