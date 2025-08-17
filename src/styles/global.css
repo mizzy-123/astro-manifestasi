@@ -5,17 +5,18 @@
 
 @font-face {
   font-family: "poppins";
-  src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
+  src: url("../asset/font/Poppins-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "plusjakartaregular";
-  src: url("../assets/fonts/PlusJakartaSans-Regular.ttf") format("truetype");
+  src: url("../asset/font/PlusJakartaSans-Regular.ttf") format("truetype");
 }
 
 @theme {
   --breakpoint-mobile: 20rem;
   --color-background2: #1c1e1e;
+  --color-background3: #252525;
   --color-background1: #f0f0f0;
   --color-font-white: #f9f8f8;
   --color-color-main: #9275f7;
