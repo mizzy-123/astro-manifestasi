@@ -16,13 +16,13 @@ export function Header() {
   }, []);
 
   const navigationItems = [
-    { name: "Beranda", href: "#beranda" },
+    { name: "Beranda", href: "/#beranda" },
     { name: "Tentang Kami", href: "/about" },
-    { name: "Layanan", href: "#service" },
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "FaQ", href: "#faq" },
-    { name: "Testimoni", href: "#testimoni" },
-    { name: "Hubungi Kami", href: "#kontak" },
+    { name: "Layanan", href: "/#service" },
+    { name: "Portfolio", href: "/#portfolio" },
+    { name: "FaQ", href: "/#faq" },
+    { name: "Testimoni", href: "/#testimoni" },
+    { name: "Hubungi Kami", href: "/#kontak" },
   ];
 
   useEffect(() => {
@@ -39,7 +39,7 @@ export function Header() {
           navA.current.forEach((a: HTMLAnchorElement) => {
             a.classList.remove("active-link");
 
-            if (a.getAttribute("href") === `#${id}`) {
+            if (a.getAttribute("href") === `/#${id}`) {
               a.classList.add("active-link");
             }
           });

@@ -3,11 +3,13 @@ import Footer from "../components/common/Footer";
 import { Header } from "../components/common/Header";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import AboutSection from "../components/sections/AboutSection.astro";
+import OurTeamSection from "../components/sections/OurTeamSection.astro";
 
 ---
 
 <BaseLayout>
     <Header client:load />
     <AboutSection />
+    <OurTeamSection />
     <Footer client:load />
 </BaseLayout>
