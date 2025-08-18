@@ -2,10 +2,7 @@ import { RiInstagramFill } from "react-icons/ri";
 
 export default function Footer() {
   return (
-    <footer
-      className="relative w-full h-[326px] bg-[#6D59B3] mt-24"
-      id="kontak"
-    >
+    <footer className="relative w-full h-[326px] bg-[#6D59B3]" id="kontak">
       <div className="w-full flex justify-center absolute top-[-60%] lg:px-0 mobile:px-[3%]">
         <div className="lg:w-[964px] mobile:w-full mlg:h-[378px] mobile:h-fit bg-[linear-gradient(180deg,#6C4DD6_0%,#221356_100%)] rounded-[10px] lg:px-[60px] mobile:px-[3%] lg:py-[42px] mobile:py-[5%] flex lg:gap-6 mobile:gap-3.5">
           <img
