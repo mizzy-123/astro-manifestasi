@@ -2,7 +2,10 @@ import { RiInstagramFill } from "react-icons/ri";
 
 export default function Footer() {
   return (
-    <footer className="relative w-full h-[326px] bg-[#6D59B3] mt-24">
+    <footer
+      className="relative w-full h-[326px] bg-[#6D59B3] mt-24"
+      id="kontak"
+    >
       <div className="w-full flex justify-center absolute top-[-60%] lg:px-0 mobile:px-[3%]">
         <div className="lg:w-[964px] mobile:w-full mlg:h-[378px] mobile:h-fit bg-[linear-gradient(180deg,#6C4DD6_0%,#221356_100%)] rounded-[10px] lg:px-[60px] mobile:px-[3%] lg:py-[42px] mobile:py-[5%] flex lg:gap-6 mobile:gap-3.5">
           <img
@@ -96,16 +99,16 @@ export default function Footer() {
               <path
                 d="M14 23V5.5"
                 stroke="#6D59B3"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M21 12L14 5L7 12"
                 stroke="#6D59B3"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </a>
