@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="lg:w-[964px] mobile:w-full mlg:h-[378px] mobile:h-fit bg-[linear-gradient(180deg,#6C4DD6_0%,#221356_100%)] rounded-[10px] lg:px-[60px] mobile:px-[3%] lg:py-[42px] mobile:py-[5%] flex lg:gap-6 mobile:gap-3.5">
           <img
             className="rounded-tl-[10px] rounded-br-[10px] md:w-[341px] mobile:w-[148px] object-cover"
-            src="/public/asset/image/confident_business.png"
+            src="/asset/image/confident_business.png"
             alt=""
           />
           <div className="w-full">

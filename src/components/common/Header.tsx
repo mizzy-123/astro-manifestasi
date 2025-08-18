@@ -7,23 +7,23 @@ export function Header() {
 
   const headerRef = useRef<HTMLDivElement | null>(null);
   const [isStickyNav, setStickyNav] = useState<boolean>(false);
-
-  const [activeIndexNav, setActiveIndexNav] = useState<number | null>(null);
   const navA = useRef<HTMLAnchorElement[]>([]);
+
+  const [currentPath, setCurrentPath] = useState("/");
+
+  useEffect(() => {
+    setCurrentPath(window.location.pathname); // isi setelah client mount
+  }, []);
 
   const navigationItems = [
     { name: "Beranda", href: "#beranda" },
-    { name: "Tentang Kami", href: "#" },
+    { name: "Tentang Kami", href: "/about" },
     { name: "Layanan", href: "#service" },
     { name: "Portfolio", href: "#portfolio" },
     { name: "FaQ", href: "#faq" },
     { name: "Testimoni", href: "#testimoni" },
     { name: "Hubungi Kami", href: "#kontak" },
   ];
-
-  const toogleActiveNav = (index: number) => {
-    setActiveIndexNav((prevIndex) => (prevIndex === index ? null : index));
-  };
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -49,7 +49,6 @@ export function Header() {
       if (headerRef.current) {
         const scrollTop = window.scrollY || document.documentElement.scrollTop;
         setStickyNav(scrollTop > headerRef.current.offsetHeight);
-        console.log("scrollTop:", scrollTop);
       }
     };
 
@@ -96,21 +95,29 @@ export function Header() {
             isOpen ? "right-0" : "right-[-100%]"
           } top-0 lg:rounded-none lg:shadow-none mobile:shadow-[-2px_4px_4px_0_rgba(117,77,251,0.20)] lg:pt-0 mobile:pt-[57px] transition-all duration-500`}
         >
-          {navigationItems.map((item, index) => (
-            <li className="relative" key={index}>
-              <a
-                ref={(el) => {
-                  if (el) {
-                    navA.current[index] = el;
-                  }
-                }}
-                className="font-poppins text-[16px] text-center text-font-white hover:text-color-main hover:before:content-[''] hover:before:absolute hover:before:left-0 hover:before:bottom-0 hover:before:w-full hover:before:h-[2px] hover:before:bg-color-main"
-                href={item.href}
-              >
-                {item.name}
-              </a>
-            </li>
-          ))}
+          {navigationItems.map((item, index) => {
+            const isActive =
+              item.href === currentPath ||
+              (item.href.startsWith("#") &&
+                navA.current[index]?.classList.contains("active-link"));
+            return (
+              <li className="relative" key={index}>
+                <a
+                  ref={(el) => {
+                    if (el) {
+                      navA.current[index] = el;
+                    }
+                  }}
+                  className={`font-poppins text-[16px] text-center text-font-white hover:text-color-main hover:before:content-[''] hover:before:absolute hover:before:left-0 hover:before:bottom-0 hover:before:w-full hover:before:h-[2px] hover:before:bg-color-main ${
+                    isActive ? "active-link2" : ""
+                  }`}
+                  href={item.href}
+                >
+                  {item.name}
+                </a>
+              </li>
+            );
+          })}
         </ul>
         <GiHamburgerMenu
           className="lg:hidden mobile:block"

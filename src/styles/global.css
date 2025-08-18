@@ -46,4 +46,8 @@
   .active-link {
     @apply text-color-main relative before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-full before:h-[2px] before:bg-color-main;
   }
+
+  .active-link2 {
+    @apply text-color-main relative before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-full before:h-[2px] before:bg-color-main;
+  }
 }

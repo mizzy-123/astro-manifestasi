@@ -1,10 +1,13 @@
 ---
+import Footer from "../components/common/Footer";
+import { Header } from "../components/common/Header";
 import BaseLayout from "../layouts/BaseLayout.astro";
-
+import AboutSection from "../components/sections/AboutSection.astro";
 
 ---
 
 <BaseLayout>
-    <h1>Welcome to Astro!</h1>
-    <p>This is a simple About page.</p>
+    <Header client:load />
+    <AboutSection />
+    <Footer client:load />
 </BaseLayout>
