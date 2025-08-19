@@ -9,7 +9,7 @@ interface CounterProps {
 export function HeroStatusCount() {
   let project: CounterProps = {
     start: 0,
-    end: 120,
+    end: 23,
     duration: 2000, // 2 detik
   };
 
@@ -17,7 +17,7 @@ export function HeroStatusCount() {
 
   let satisfaction: CounterProps = {
     start: 0,
-    end: 100,
+    end: 96,
     duration: 2000, // 2 detik
   };
 

@@ -67,7 +67,7 @@ export default function Footer() {
             </div>
             <a
               className="md:w-[80%] mobile:w-[90%] md:h-[55px] mobile:h-[30px] bg-font-white p-2.5 rounded-[10px] flex justify-center items-center mt-5"
-              href="#"
+              href="https://wa.link/bwpwbi"
             >
               <p className="w-full text-center font-poppins sm:text-[16px] mobile:text-[12px] font-bold bg-gradient-to-b from-[#714AF3] to-[#482F9C] bg-clip-text text-transparent">
                 Konsultasikan Sekarang
@@ -81,7 +81,7 @@ export default function Footer() {
           Copyright © 2025 by Manifestasi | All Rights Reserved
         </p>
         <div className="md:w-fit mobile:w-full flex justify-between items-center gap-[15px]">
-          <a href="#">
+          <a href="https://www.instagram.com/manifestasi_tech?utm_source=ig_web_button_share_sheet&igsh=bG01czdrMjgxcnIx">
             <RiInstagramFill size={36} className="text-font-white" />
           </a>
           <a href="#">

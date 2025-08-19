@@ -6,7 +6,32 @@ const STEP = CARD_WIDTH + CARD_GAP;
 const DELAY = 2500;
 
 export default function TestimoniCard() {
-  const totalCards = 6;
+  const testimoniClient = [
+    {
+      testimoni: "Aaa, makasii ya kak, desainnya jadinya cepat",
+      name: "Nasya",
+    },
+    {
+      testimoni: "Bagus aman kak, sudah sesuai",
+      name: "Guntur",
+    },
+    {
+      testimoni:
+        "Mantap bagus kak, semangat ya kak!!, sisanya ntar kalo udah jadi semuanya all in ya",
+      name: "Gavin",
+    },
+    {
+      testimoni:
+        "Bagus banget kak, pokoknya gak bisa dijelasin pakai kata kata",
+      name: "Minto",
+    },
+    {
+      testimoni:
+        "Mas ini udah oke bagus banget, maaf ya mas semalam ketiduran pas buka",
+      name: "Muqaromah",
+    },
+  ];
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [dragOffset, setDragOffset] = useState(0);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
@@ -17,7 +42,7 @@ export default function TestimoniCard() {
     stopAutoScroll();
     intervalRef.current = setInterval(() => {
       if (isDragging.current) return;
-      setCurrentIndex((prev) => (prev + 1) % totalCards);
+      setCurrentIndex((prev) => (prev + 1) % testimoniClient.length);
     }, DELAY);
   };
 
@@ -53,9 +78,11 @@ export default function TestimoniCard() {
     if (Math.abs(dragOffset) > STEP / 3) {
       // pindah card jika drag cukup jauh
       if (dragOffset < 0) {
-        setCurrentIndex((prev) => (prev + 1) % totalCards);
+        setCurrentIndex((prev) => (prev + 1) % testimoniClient.length);
       } else {
-        setCurrentIndex((prev) => (prev === 0 ? totalCards - 1 : prev - 1));
+        setCurrentIndex((prev) =>
+          prev === 0 ? testimoniClient.length - 1 : prev - 1
+        );
       }
     }
 
@@ -85,17 +112,17 @@ export default function TestimoniCard() {
           }px + ${dragOffset}px))`,
         }}
       >
-        {Array.from({ length: totalCards }).map((_, i) => (
+        {testimoniClient.map((v, i) => (
           <div
             key={i}
             className="shrink-0 flex flex-col w-[318px] h-[195px] rounded-xl bg-[rgba(69,66,66,0.20)] backdrop-blur-md border border-white/10 overflow-hidden px-[13px]"
           >
             <div className="my-auto w-full flex flex-col gap-6">
               <p className="text-[#E9E2E2] text-center text-[16px] font-poppins">
-                Sangat membantu dalam pengerjaan good job
+                {v.testimoni}
               </p>
               <p className="font-poppins text-[13px] text-[#E9E2E2] text-center">
-                Rani
+                {v.name}
               </p>
             </div>
           </div>
