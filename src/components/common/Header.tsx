@@ -88,7 +88,9 @@ export function Header() {
           isStickyNav ? "shadow-[0px_4px_4px_0_rgba(117,77,251,0.20)]" : ""
         }`}
       >
-        <img width={230} src="/asset/image/logo.png" alt="" />
+        <a href="/">
+          <img width={230} src="/asset/image/logo.png" alt="" />
+        </a>
         <ul
           ref={navRef}
           className={`lg:w-fit mobile:w-[176px] lg:bg-transparent mobile:bg-background2 lg:h-full mobile:h-screen flex lg:flex-row mobile:flex-col items-center gap-9 lg:static mobile:absolute ${
