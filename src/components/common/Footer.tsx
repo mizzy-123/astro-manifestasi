@@ -28,7 +28,7 @@ export default function Footer() {
                 />
               </svg>
               <p className="font-poppins md:text-[16px] mobile:text-[12px] text-font-white">
-                120+ Project Terselesaikan
+                23+ Project Terselesaikan
               </p>
             </div>
             <div className="flex items-center gap-2.5 mt-[16px]">
@@ -45,7 +45,7 @@ export default function Footer() {
                 />
               </svg>
               <p className="font-poppins md:text-[16px] mobile:text-[12px] text-font-white">
-                99% Pelanggan Puas
+                96% Pelanggan Puas
               </p>
             </div>
             <div className="flex items-center gap-2.5 mt-[16px]">
