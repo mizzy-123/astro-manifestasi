@@ -11,6 +11,14 @@ const { pageTitle } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<meta name="title" content="Jasa website, aplikasi, dan design dengan harga terjangkau">
 		<meta name="description" content="Optimalkan potensi digital bisnis Anda dengan layanan terbaik dalam pengembangan website, aplikasi, dan desain kreatif. Kami adalah mitra terpercaya yang menawarkan solusi kustom yang menghadirkan pengalaman digital yang luar biasa. Dari konsep hingga peluncuran, kami memadukan keahlian teknis dengan kreativitas yang inovatif. Hubungi kami hari ini untuk mewujudkan visi digital Anda!">
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-6TF2ESZLRE"></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-6TF2ESZLRE');
+		</script>
 		<title>{pageTitle}</title>
 	</head>
 	<body class="dark:bg-background2">
