@@ -17,7 +17,7 @@ export function Header() {
 
   const navigationItems = [
     { name: "Beranda", href: "/#beranda" },
-    { name: "Tentang Kami", href: "/about" },
+    { name: "Tentang Kami", href: "/tentang-kami" },
     { name: "Layanan", href: "/#service" },
     { name: "Portfolio", href: "/#portfolio" },
     { name: "FaQ", href: "/#faq" },
