@@ -12,12 +12,73 @@ const { pageTitle } = Astro.props;
 		<meta name="title" content="Jasa website, aplikasi, dan design dengan harga terjangkau">
 		<meta name="description" content="Optimalkan potensi digital bisnis Anda dengan layanan terbaik dalam pengembangan website, aplikasi, dan desain kreatif. Kami adalah mitra terpercaya yang menawarkan solusi kustom yang menghadirkan pengalaman digital yang luar biasa. Dari konsep hingga peluncuran, kami memadukan keahlian teknis dengan kreativitas yang inovatif. Hubungi kami hari ini untuk mewujudkan visi digital Anda!">
 		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-6TF2ESZLRE"></script>
+		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-6TF2ESZLRE"></script>
 		<script is:inline>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 			gtag('config', 'G-6TF2ESZLRE');
+		</script>
+		<script is:inline type="application/ld+json">
+			{
+			  "@context": "https://schema.org",
+			  "@type": "Organization",
+			  "name": "Manifestasi",
+			  "url": "https://manifestasi.my.id",
+			  "logo": "https://manifestasi.my.id/asset/image/logo.png",
+			  "description": "Manifest adalah tim developer berpengalaman yang selama lima tahun terakhir telah mendedikasikan diri untuk mewujudkan visi bisnis Anda dalam bentuk solusi digital yang tangguh dan terjangkau. Kami memahami betul bahwa di era yang serba digital ini, memiliki kehadiran online yang kuat melalui website, aplikasi, serta desain yang profesional bukan lagi pilihan, melainkan keharusan untuk survive dan berkembang. Itulah mengapa kami berkomitmen untuk menjadi mitra terpercaya Anda, bekerja sama membangun setiap detail proyek digital, memastikan Anda mendapatkan layanan terbaik yang bukan hanya inovatif dan berkelas, tetapi juga selaras dengan anggaran Anda."
+			}
+		  
+		</script>
+		<script is:inline type="application/ld+json">
+			{
+			  "@context": "https://schema.org",
+			  "@type": "BreadcrumbList",
+			  "itemListElement": [
+				{
+				  "@type": "ListItem",
+				  "position": 1,
+				  "name": "Beranda",
+				  "item": "https://www.manifestasi.my.id/#beranda"
+				},
+				{
+				  "@type": "ListItem",
+				  "position": 2,
+				  "name": "Tentang Kami",
+				  "item": "https://www.manifestasi.my.id/tentang-kami"
+				},
+				{
+				  "@type": "ListItem",
+				  "position": 3,
+				  "name": "Layanan",
+				  "item": "https://www.manifestasi.my.id/#layanan"
+				},
+				{
+				  "@type": "ListItem",
+				  "position": 4,
+				  "name": "Portfolio",
+				  "item": "https://www.manifestasi.my.id/#portfolio"
+				},
+				{
+				  "@type": "ListItem",
+				  "position": 5,
+				  "name": "FaQ",
+				  "item": "https://www.manifestasi.my.id/#faq"
+				},
+				{
+				  "@type": "ListItem",
+				  "position": 6,
+				  "name": "Testimoni",
+				  "item": "https://www.manifestasi.my.id/#testimoni"
+				},
+				{
+				  "@type": "ListItem",
+				  "position": 7,
+				  "name": "Hubungi Kami",
+				  "item": "https://www.manifestasi.my.id/#kontak"
+				}
+			  ]
+			}
 		</script>
 		<title>{pageTitle}</title>
 	</head>

@@ -7,6 +7,12 @@ interface CounterProps {
 }
 
 export function HeroStatusCount() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   let project: CounterProps = {
     start: 0,
     end: 23,
@@ -38,6 +44,8 @@ export function HeroStatusCount() {
   /* Menggunakan useEffect untuk memulai animasi saat komponen dimount */
   // useeffect project
   useEffect(() => {
+    if (!mounted) return;
+
     let startTime: number | null = null;
 
     const step = (timestamp: number) => {
@@ -56,10 +64,12 @@ export function HeroStatusCount() {
     };
 
     requestAnimationFrame(step);
-  }, []);
+  }, [mounted]);
 
   // useeffect satisfaction
   useEffect(() => {
+    if (!mounted) return;
+
     let startTime: number | null = null;
 
     const step = (timestamp: number) => {
@@ -84,10 +94,12 @@ export function HeroStatusCount() {
     };
 
     requestAnimationFrame(step);
-  }, []);
+  }, [mounted]);
 
   // useeffect experience
   useEffect(() => {
+    if (!mounted) return;
+
     let startTime: number | null = null;
 
     const step = (timestamp: number) => {
@@ -108,7 +120,7 @@ export function HeroStatusCount() {
     };
 
     requestAnimationFrame(step);
-  }, []);
+  }, [mounted]);
   return (
     <div className="text-white py-6">
       <div className="max-w-4xl mx-auto flex justify-center divide-x divide-font-white">
