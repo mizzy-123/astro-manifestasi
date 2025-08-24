@@ -9,8 +9,27 @@ const { pageTitle } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="title" content="Jasa website, aplikasi, dan design dengan harga terjangkau">
+		<meta name="title" content="Manifestasi | Jasa website, aplikasi, dan design dengan harga terjangkau">
 		<meta name="description" content="Optimalkan potensi digital bisnis Anda dengan layanan terbaik dalam pengembangan website, aplikasi, dan desain kreatif. Kami adalah mitra terpercaya yang menawarkan solusi kustom yang menghadirkan pengalaman digital yang luar biasa. Dari konsep hingga peluncuran, kami memadukan keahlian teknis dengan kreativitas yang inovatif. Hubungi kami hari ini untuk mewujudkan visi digital Anda!">
+		<meta name="keywords" content="jasa website, jasa aplikasi, jasa design, jasa digital marketing, jasa pembuatan website, jasa pembuatan aplikasi, jasa pembuatan design, jasa pembuatan website murah, jasa pembuatan aplikasi murah, jasa pembuatan design murah" />
+
+		<!-- IG/Fecebook dll -->
+		<meta property="og:title" content="Manifestasi - Jasa Website, Aplikasi, dan Design" />
+		<meta property="og:description" content="Manifestasi adalah mitra terpercaya untuk pengembangan website, aplikasi, dan desain kreatif dengan solusi digital inovatif serta harga terjangkau." />
+		<meta property="og:image" content="https://manifestasi.my.id/asset/image/logo.png" />
+		<meta property="og:url" content="https://manifestasi.my.id" />
+		<meta property="og:type" content="website" />
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:url" content="https://manifestasi.my.id/">
+		<meta name="twitter:title" content="Jasa Website, Aplikasi, dan Design | Manifestasi">
+		<meta name="twitter:description" content="Manifestasi adalah mitra terpercaya untuk pengembangan website, aplikasi, dan desain kreatif dengan solusi digital inovatif serta harga terjangkau.">
+		<meta name="twitter:image" content="https://manifestasi.my.id/asset/image/logo.png">
+
+		<!-- Scroll Reveal -->
+		<script is:inline src="https://unpkg.com/scrollreveal"></script>
+
 		<!-- Google tag (gtag.js) -->
 		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-6TF2ESZLRE"></script>
 		<script is:inline>
@@ -19,6 +38,7 @@ const { pageTitle } = Astro.props;
 			gtag('js', new Date());
 			gtag('config', 'G-6TF2ESZLRE');
 		</script>
+
 		<script is:inline type="application/ld+json">
 			{
 			  "@context": "https://schema.org",
@@ -26,7 +46,10 @@ const { pageTitle } = Astro.props;
 			  "name": "Manifestasi",
 			  "url": "https://manifestasi.my.id",
 			  "logo": "https://manifestasi.my.id/asset/image/logo.png",
-			  "description": "Manifest adalah tim developer berpengalaman yang selama lima tahun terakhir telah mendedikasikan diri untuk mewujudkan visi bisnis Anda dalam bentuk solusi digital yang tangguh dan terjangkau. Kami memahami betul bahwa di era yang serba digital ini, memiliki kehadiran online yang kuat melalui website, aplikasi, serta desain yang profesional bukan lagi pilihan, melainkan keharusan untuk survive dan berkembang. Itulah mengapa kami berkomitmen untuk menjadi mitra terpercaya Anda, bekerja sama membangun setiap detail proyek digital, memastikan Anda mendapatkan layanan terbaik yang bukan hanya inovatif dan berkelas, tetapi juga selaras dengan anggaran Anda."
+			  "description": "Manifest adalah tim developer berpengalaman yang selama lima tahun terakhir telah mendedikasikan diri untuk mewujudkan visi bisnis Anda dalam bentuk solusi digital yang tangguh dan terjangkau. Kami memahami betul bahwa di era yang serba digital ini, memiliki kehadiran online yang kuat melalui website, aplikasi, serta desain yang profesional bukan lagi pilihan, melainkan keharusan untuk survive dan berkembang. Itulah mengapa kami berkomitmen untuk menjadi mitra terpercaya Anda, bekerja sama membangun setiap detail proyek digital, memastikan Anda mendapatkan layanan terbaik yang bukan hanya inovatif dan berkelas, tetapi juga selaras dengan anggaran Anda.",
+			  "sameAs": [
+				"https://www.instagram.com/manifestasi_tech"
+			  ]
 			}
 		  
 		</script>
@@ -86,5 +109,23 @@ const { pageTitle } = Astro.props;
 		<main>
 			<slot />
 		</main>
+
+		<script is:inline>
+			ScrollReveal({
+      			reset: true,
+      			distance: "80px",
+      			duration: 2000,
+      			delay: 200,
+    		});
+
+			ScrollReveal().reveal("#hero-section", { delay: 100, origin: "top" });
+			ScrollReveal().reveal("#why-title", { delay: 100, origin: "top" });
+			ScrollReveal().reveal("#why-content", { delay: 100, origin: "bottom" });
+			ScrollReveal().reveal("#service-text", { delay: 100, origin: "top" });
+			ScrollReveal().reveal("#service-content", { delay: 100, origin: "bottom" });
+			ScrollReveal().reveal("#service-button", { delay: 0, origin: "bottom" });
+			ScrollReveal().reveal("#portfolio-text", { delay: 100, origin: "top" });
+			ScrollReveal().reveal("#portfolio-content", { delay: 100, origin: "bottom" });
+		</script>
 	</body>
 </html>
