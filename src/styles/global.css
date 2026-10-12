@@ -5,12 +5,35 @@
 
 @font-face {
   font-family: "poppins";
-  src: url("../asset/font/Poppins-Regular.ttf") format("truetype");
+  src: url("/asset/font/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("/asset/font/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "plusjakartaregular";
-  src: url("../asset/font/PlusJakartaSans-Regular.ttf") format("truetype");
+  src: url("/asset/font/PlusJakartaSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "plusjakartaregular";
+  src: url("/asset/font/PlusJakartaSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
 }
 
 @theme {

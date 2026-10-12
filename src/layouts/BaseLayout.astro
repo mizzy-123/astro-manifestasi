@@ -9,13 +9,13 @@ const { pageTitle } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="title" content="Manifestasi | Jasa website, aplikasi, dan design dengan harga terjangkau">
-		<meta name="description" content="Optimalkan potensi digital bisnis Anda dengan layanan terbaik dalam pengembangan website, aplikasi, dan desain kreatif. Kami adalah mitra terpercaya yang menawarkan solusi kustom yang menghadirkan pengalaman digital yang luar biasa. Dari konsep hingga peluncuran, kami memadukan keahlian teknis dengan kreativitas yang inovatif. Hubungi kami hari ini untuk mewujudkan visi digital Anda!">
-		<meta name="keywords" content="jasa website, jasa aplikasi, jasa design, jasa digital marketing, jasa pembuatan website, jasa pembuatan aplikasi, jasa pembuatan design, jasa pembuatan website murah, jasa pembuatan aplikasi murah, jasa pembuatan design murah" />
+		<meta name="title" content="Manifestasi | Website dan aplikasi kustom untuk otomatisasi bisnis">
+		<meta name="description" content="Bangun sistem digital yang cepat, aman, dan dirancang untuk skala bisnis Anda. Company profile, web app, e-commerce, hingga aplikasi Android native.">
+		<meta name="keywords" content="jasa website, jasa aplikasi, web app, e-commerce, aplikasi android, company profile, landing page, sistem kasir, otomatisasi bisnis" />
 
 		<!-- IG/Fecebook dll -->
-		<meta property="og:title" content="Manifestasi - Jasa Website, Aplikasi, dan Design" />
-		<meta property="og:description" content="Manifestasi adalah mitra terpercaya untuk pengembangan website, aplikasi, dan desain kreatif dengan solusi digital inovatif serta harga terjangkau." />
+		<meta property="og:title" content="Manifestasi - Otomatisasi Bisnis dengan Website dan Aplikasi Kustom" />
+		<meta property="og:description" content="Bangun sistem digital yang cepat, aman, dan dirancang khusus untuk skala bisnis Anda." />
 		<meta property="og:image" content="https://manifestasi.my.id/asset/image/logo.png" />
 		<meta property="og:url" content="https://manifestasi.my.id" />
 		<meta property="og:type" content="website" />
@@ -23,12 +23,9 @@ const { pageTitle } = Astro.props;
 		<!-- Twitter -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:url" content="https://manifestasi.my.id/">
-		<meta name="twitter:title" content="Jasa Website, Aplikasi, dan Design | Manifestasi">
-		<meta name="twitter:description" content="Manifestasi adalah mitra terpercaya untuk pengembangan website, aplikasi, dan desain kreatif dengan solusi digital inovatif serta harga terjangkau.">
+		<meta name="twitter:title" content="Website dan Aplikasi Kustom untuk Otomatisasi Bisnis | Manifestasi">
+		<meta name="twitter:description" content="Bangun sistem digital yang cepat, aman, dan dirancang khusus untuk skala bisnis Anda.">
 		<meta name="twitter:image" content="https://manifestasi.my.id/asset/image/logo.png">
-
-		<!-- Scroll Reveal -->
-		<script is:inline src="https://unpkg.com/scrollreveal"></script>
 
 		<!-- Google tag (gtag.js) -->
 		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-6TF2ESZLRE"></script>
@@ -110,22 +107,5 @@ const { pageTitle } = Astro.props;
 			<slot />
 		</main>
 
-		<script is:inline>
-			ScrollReveal({
-      			reset: true,
-      			distance: "80px",
-      			duration: 2000,
-      			delay: 200,
-    		});
-
-			ScrollReveal().reveal("#hero-section", { delay: 100, origin: "top" });
-			ScrollReveal().reveal("#why-title", { delay: 100, origin: "top" });
-			ScrollReveal().reveal("#why-content", { delay: 100, origin: "bottom" });
-			ScrollReveal().reveal("#service-text", { delay: 100, origin: "top" });
-			ScrollReveal().reveal("#service-content", { delay: 100, origin: "bottom" });
-			ScrollReveal().reveal("#service-button", { delay: 0, origin: "bottom" });
-			ScrollReveal().reveal("#portfolio-text", { delay: 100, origin: "top" });
-			ScrollReveal().reveal("#portfolio-content", { delay: 100, origin: "bottom" });
-		</script>
 	</body>
 </html>

@@ -2,22 +2,29 @@
 import BaseLayout from "../layouts/BaseLayout.astro"
 import { Header } from "../components/common/Header.tsx"
 import HeroSection from "../components/sections/HeroSection.astro"
-import WhySection from "../components/sections/WhySection.astro"
-import ServiceSection from "../components/sections/ServiceSection.astro"
+import ProblemSection from "../components/sections/ProblemSection.astro"
 import PortfolioSection from "../components/sections/PortfolioSection.astro"
-import FaqSection from "../components/sections/FaqSection.astro"
+import AuthoritySection from "../components/sections/AuthoritySection.astro"
 import TestimoniSection from "../components/sections/TestimoniSection.astro"
+import ProcessSection from "../components/sections/ProcessSection.astro"
+import PricingSection from "../components/sections/PricingSection.astro"
+import FitSection from "../components/sections/FitSection.astro"
+import FaqSection from "../components/sections/FaqSection.astro"
+import ContactSection from "../components/sections/ContactSection.astro"
 import Footer from "../components/common/Footer"
-
 ---
 
-<BaseLayout pageTitle="Jasa Website, Aplikasi, dan Design | Manifestasi">
+<BaseLayout pageTitle="Website & Aplikasi Kustom untuk Otomatisasi Bisnis | Manifestasi">
 	<Header client:load />
 	<HeroSection />
-	<WhySection />
-	<ServiceSection />
+	<ProblemSection />
 	<PortfolioSection />
-	<FaqSection />
+	<AuthoritySection />
 	<TestimoniSection />
+	<ProcessSection />
+	<PricingSection />
+	<FitSection />
+	<FaqSection />
+	<ContactSection />
 	<Footer client:load />
 </BaseLayout>

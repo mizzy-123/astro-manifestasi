@@ -2,68 +2,154 @@
 
 ---
 
-<section class="relative w-full h-fit px-[3%] py-[10%] flex flex-col justify-center items-center gap-[54px]" id="portfolio">
-    <svg class="absolute top-[-100px] right-0" xmlns="http://www.w3.org/2000/svg" width="232" height="562" viewBox="0 0 232 562" fill="none">
-        <g filter="url(#filter0_f_62_961)">
-          <path d="M443 281C443 361.634 374.052 427 289 427C203.948 427 135 361.634 135 281C135 200.366 203.948 135 289 135C374.052 135 443 200.366 443 281Z" fill="#643DE5" fill-opacity="0.4"/>
-        </g>
-        <defs>
-          <filter id="filter0_f_62_961" x="0.399994" y="0.399994" width="577.2" height="561.2" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-            <feGaussianBlur stdDeviation="67.3" result="effect1_foregroundBlur_62_961"/>
-          </filter>
-        </defs>
-      </svg>
-    <svg class="absolute bottom-[-300px] left-[-50px]" xmlns="http://www.w3.org/2000/svg" width="198" height="562" viewBox="0 0 198 562" fill="none">
-        <g filter="url(#filter0_f_62_963)">
-          <path d="M63 281C63 361.634 -5.94814 427 -91 427C-176.052 427 -245 361.634 -245 281C-245 200.366 -176.052 135 -91 135C-5.94814 135 63 200.366 63 281Z" fill="#643DE5" fill-opacity="0.4"/>
-        </g>
-        <defs>
-          <filter id="filter0_f_62_963" x="-379.6" y="0.399994" width="577.2" height="561.2" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-            <feGaussianBlur stdDeviation="67.3" result="effect1_foregroundBlur_62_963"/>
-          </filter>
-        </defs>
-    </svg>
-    <div id="portfolio-text" class="relative w-full items-center flex flex-col gap-4">
-        <h1 class="font-poppins text-center text-font-white sm:text-[32px] mobile:text-2xl font-medium">Project yang telah <span class="text-color-main">diselesaikan</span></h1>
-        <p class="sm:w-[90%] mobile:w-[90%] text-center text-font-white font-poppins sm:text-[20px] mobile:text-[12px]">Wujud Nyata Keberhasilan Dari Konsep Awal Hingga Solusi Digital Produktif untuk Klien</p>
+<section class="relative w-full overflow-hidden px-[4%] py-20" id="portofolio">
+  <div id="portfolio-text" class="relative mx-auto mb-12 flex w-full max-w-6xl flex-col gap-3">
+    <p class="font-poppins text-sm text-color-main">Portofolio & studi kasus</p>
+    <h2 class="max-w-3xl font-plusjakartaregular text-2xl font-bold text-font-white sm:text-[32px]">
+      Sistem yang menggerakkan operasional, bukan sekadar halaman profil
+    </h2>
+    <p class="max-w-3xl font-poppins text-sm text-white/70 sm:text-base">
+      Di bawah ini ada pola solusi yang kami rancang untuk alur bisnis, plus proyek yang sudah dikerjakan. Angka hasil bisnis hanya kami tulis jika kliennya memang mengukurnya.
+    </p>
+  </div>
+
+  <div id="portfolio-content" class="relative mx-auto grid w-full max-w-6xl gap-6 lg:grid-cols-3">
+    <article class="flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#232323]">
+      <div class="bg-[#14161c] p-4">
+        <div class="mb-3 flex items-center justify-between">
+          <p class="font-poppins text-xs font-bold text-white">POS Kasir</p>
+          <span class="rounded-full bg-emerald-400/15 px-2 py-0.5 font-poppins text-[10px] text-emerald-300">Live</span>
+        </div>
+        <div class="grid grid-cols-2 gap-2">
+          <div class="rounded-lg bg-white/5 p-2">
+            <p class="font-poppins text-[10px] text-white/50">Transaksi</p>
+            <p class="font-poppins text-sm font-bold text-white">42</p>
+          </div>
+          <div class="rounded-lg bg-white/5 p-2">
+            <p class="font-poppins text-[10px] text-white/50">Stok menipis</p>
+            <p class="font-poppins text-sm font-bold text-amber-200">6 item</p>
+          </div>
+        </div>
+        <div class="mt-3 rounded-lg border border-[#25D366]/30 bg-[#25D366]/10 p-2">
+          <p class="font-poppins text-[10px] text-[#86efac]">WhatsApp · tagihan otomatis</p>
+          <p class="font-poppins text-[11px] text-white">Meja 4 · Rp 128.000 · menunggu pembayaran</p>
+        </div>
+      </div>
+      <div class="flex flex-1 flex-col gap-3 p-5">
+        <p class="w-fit rounded-full border border-color-main/40 px-2 py-1 font-poppins text-[11px] text-color-main">Pola solusi</p>
+        <h3 class="font-poppins text-lg font-bold text-font-white">POS dengan tagihan WhatsApp</h3>
+        <p class="font-poppins text-sm leading-relaxed text-white/75">Kasir mencatat penjualan, stok berkurang di sistem yang sama, lalu tagihan terkirim ke WhatsApp pelanggan tanpa salin nominal manual.</p>
+        <ol class="mt-auto flex flex-wrap gap-2">
+          <li class="rounded-md bg-white/5 px-2 py-1 font-poppins text-[11px] text-white/80">1. Catat</li>
+          <li class="rounded-md bg-white/5 px-2 py-1 font-poppins text-[11px] text-white/80">2. Stok</li>
+          <li class="rounded-md bg-white/5 px-2 py-1 font-poppins text-[11px] text-white/80">3. Tagihan WA</li>
+        </ol>
+      </div>
+    </article>
+
+    <article class="flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#232323]">
+      <div class="flex justify-center bg-[#14161c] p-4">
+        <div class="w-[150px] rounded-[18px] border border-white/10 bg-[#0e1016] p-3">
+          <p class="mb-2 text-center font-poppins text-[10px] font-bold text-white">Checkout</p>
+          <div class="mb-2 rounded-md bg-white p-2">
+            <div class="grid grid-cols-5 gap-0.5">
+              <span class="col-span-2 h-5 rounded-[2px] bg-[#111]"></span>
+              <span class="h-2 rounded-[1px] bg-[#111]"></span>
+              <span class="h-2 rounded-[1px] bg-[#111]/40"></span>
+              <span class="h-2 rounded-[1px] bg-[#111]"></span>
+              <span class="h-2 rounded-[1px] bg-[#111]/30"></span>
+              <span class="h-2 rounded-[1px] bg-[#111]"></span>
+              <span class="h-2 rounded-[1px] bg-[#111]/50"></span>
+              <span class="h-2 rounded-[1px] bg-[#111]/20"></span>
+              <span class="col-span-2 h-2 rounded-[1px] bg-[#111]"></span>
+            </div>
+          </div>
+          <p class="text-center font-poppins text-[10px] text-white/70">QRIS instan · Rp 249.000</p>
+        </div>
+      </div>
+      <div class="flex flex-1 flex-col gap-3 p-5">
+        <p class="w-fit rounded-full border border-color-main/40 px-2 py-1 font-poppins text-[11px] text-color-main">Pola solusi</p>
+        <h3 class="font-poppins text-lg font-bold text-font-white">Checkout dengan QRIS</h3>
+        <p class="font-poppins text-sm leading-relaxed text-white/75">Pembeli menyelesaikan pembayaran di tempat, status order berubah begitu pembayaran terverifikasi, tanpa antre konfirmasi admin.</p>
+        <ol class="mt-auto flex flex-wrap gap-2">
+          <li class="rounded-md bg-white/5 px-2 py-1 font-poppins text-[11px] text-white/80">1. Order</li>
+          <li class="rounded-md bg-white/5 px-2 py-1 font-poppins text-[11px] text-white/80">2. QRIS</li>
+          <li class="rounded-md bg-white/5 px-2 py-1 font-poppins text-[11px] text-white/80">3. Status lunas</li>
+        </ol>
+      </div>
+    </article>
+
+    <article class="flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#232323]">
+      <div class="bg-[#14161c] p-4">
+        <div class="mb-3 flex items-center gap-2">
+          <span class="h-6 w-6 rounded bg-color-main/80"></span>
+          <p class="font-poppins text-xs font-bold text-white">Portal layanan</p>
+        </div>
+        <div class="grid grid-cols-3 gap-2">
+          <div class="rounded-md bg-white/5 p-2 text-center font-poppins text-[10px] text-white/80">Pengajuan</div>
+          <div class="rounded-md bg-white/5 p-2 text-center font-poppins text-[10px] text-white/80">Status</div>
+          <div class="rounded-md bg-white/5 p-2 text-center font-poppins text-[10px] text-white/80">Dokumen</div>
+        </div>
+        <div class="mt-3 space-y-1.5">
+          <div class="h-2 w-full rounded bg-white/10"></div>
+          <div class="h-2 w-4/5 rounded bg-white/10"></div>
+          <div class="h-2 w-2/3 rounded bg-color-main/50"></div>
+        </div>
+      </div>
+      <div class="flex flex-1 flex-col gap-3 p-5">
+        <p class="w-fit rounded-full border border-color-main/40 px-2 py-1 font-poppins text-[11px] text-color-main">Pola solusi</p>
+        <h3 class="font-poppins text-lg font-bold text-font-white">Redesign portal institusi</h3>
+        <p class="font-poppins text-sm leading-relaxed text-white/75">Informasi layanan, alur pengajuan, dan status berkas diletakkan di jalur yang bisa diikuti pengunjung tanpa membuka banyak menu tersembunyi.</p>
+        <ol class="mt-auto flex flex-wrap gap-2">
+          <li class="rounded-md bg-white/5 px-2 py-1 font-poppins text-[11px] text-white/80">1. Cari layanan</li>
+          <li class="rounded-md bg-white/5 px-2 py-1 font-poppins text-[11px] text-white/80">2. Ajukan</li>
+          <li class="rounded-md bg-white/5 px-2 py-1 font-poppins text-[11px] text-white/80">3. Lacak</li>
+        </ol>
+      </div>
+    </article>
+  </div>
+
+  <div class="relative mx-auto mt-8 w-full max-w-6xl rounded-2xl border border-white/10 bg-white/5 px-5 py-6">
+    <p class="mb-4 font-poppins text-sm font-bold text-font-white">Alur yang kami rapikan di sistem semacam ini</p>
+    <ol class="grid gap-3 sm:grid-cols-5">
+      <li class="rounded-xl bg-[#1c1e1e] px-3 py-3 font-poppins text-xs text-white/80"><span class="mb-1 block text-color-main">01</span>Pelanggan pesan</li>
+      <li class="rounded-xl bg-[#1c1e1e] px-3 py-3 font-poppins text-xs text-white/80"><span class="mb-1 block text-color-main">02</span>Sistem catat & cek stok</li>
+      <li class="rounded-xl bg-[#1c1e1e] px-3 py-3 font-poppins text-xs text-white/80"><span class="mb-1 block text-color-main">03</span>Bayar lewat QRIS</li>
+      <li class="rounded-xl bg-[#1c1e1e] px-3 py-3 font-poppins text-xs text-white/80"><span class="mb-1 block text-color-main">04</span>Status masuk WhatsApp</li>
+      <li class="rounded-xl bg-[#1c1e1e] px-3 py-3 font-poppins text-xs text-white/80"><span class="mb-1 block text-color-main">05</span>Dashboard pemilik terbarui</li>
+    </ol>
+  </div>
+
+  <div class="relative mx-auto mt-14 w-full max-w-6xl">
+    <h3 class="mb-6 font-poppins text-xl font-bold text-font-white">Proyek yang sudah dikerjakan</h3>
+    <div class="grid justify-center gap-6 md:grid-cols-3">
+      <article class="overflow-hidden rounded-[10px] bg-[#2C2B2B]">
+        <div class="flex h-[200px] items-center justify-center bg-[#3a3a3a]">
+          <img src="/asset/image/portfolio1.png" width="140" alt="Tampilan aplikasi Albitec" />
+        </div>
+        <div class="flex flex-col gap-2 px-4 py-4">
+          <p class="font-poppins text-base font-bold text-font-white">Albitec</p>
+          <p class="w-fit rounded-[10px] border border-color-main px-2.5 py-1.5 font-poppins text-xs text-color-main">Aplikasi Mobile</p>
+        </div>
+      </article>
+      <article class="overflow-hidden rounded-[10px] bg-[#2C2B2B]">
+        <div class="flex h-[200px] items-center justify-center bg-[#3a3a3a]">
+          <img src="/asset/image/portfolio2.png" width="280" alt="Tampilan landing page Foodyar" />
+        </div>
+        <div class="flex flex-col gap-2 px-4 py-4">
+          <p class="font-poppins text-base font-bold text-font-white">Foodyar</p>
+          <p class="w-fit rounded-[10px] border border-color-main px-2.5 py-1.5 font-poppins text-xs text-color-main">Landing Page</p>
+        </div>
+      </article>
+      <article class="overflow-hidden rounded-[10px] bg-[#2C2B2B]">
+        <div class="flex h-[200px] items-center justify-center bg-[#3a3a3a]">
+          <img src="/asset/image/portfolio3.png" width="140" alt="Tampilan aplikasi Griya Bugar" />
+        </div>
+        <div class="flex flex-col gap-2 px-4 py-4">
+          <p class="font-poppins text-base font-bold text-font-white">Griya Bugar</p>
+          <p class="w-fit rounded-[10px] border border-color-main px-2.5 py-1.5 font-poppins text-xs text-color-main">Aplikasi Mobile</p>
+        </div>
+      </article>
     </div>
-    <div id="portfolio-content" class="relative flex flex-wrap lg:flex-row mobile:flex-col justify-center gap-[61px]">
-        <div class="w-[335px] h-[326px] rounded-[10px] bg-[#2C2B2B] hover:bg-[#714AF3] overflow-hidden relative group hover:border hover:border-[#714AF3]">
-            <div class="absolute top-0 left-0 w-full h-[70%] bg-[#3a3a3a] rounded-b-[10px] z-20">
-                <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="/asset/image/portfolio1.png" width="140" alt="">
-            </div>
-            <div class="absolute bottom-0 left-0 w-full h-[30%] bg-[#2C2B2B] group-hover:[background:linear-gradient(180deg,#714AF3_0%,#482F9C_100%)] z-10 flex flex-col justify-center px-3 gap-3">
-                <p class="w-fit text-color-main group-hover:text-font-white text-[16px] font-poppins font-semibold">
-                    Albitec
-                </p>
-                <p class="w-fit p-2.5 text-xs text-justify font-poppins text-color-main group-hover:text-font-white rounded-[10px] border border-solid border-color-main">Aplikasi Mobile</p>
-            </div>
-        </div>
-        <div class="w-[335px] h-[326px] rounded-[10px] bg-[#2C2B2B] hover:bg-[#714AF3] overflow-hidden relative group hover:border hover:border-[#714AF3]">
-            <div class="absolute top-0 left-0 w-full h-[70%] bg-[#3a3a3a] rounded-b-[10px] z-20">
-                <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="/asset/image/portfolio2.png" width="324" alt="">
-            </div>
-            <div class="absolute bottom-0 left-0 w-full h-[30%] bg-[#2C2B2B] group-hover:[background:linear-gradient(180deg,#714AF3_0%,#482F9C_100%)] z-10 flex flex-col justify-center px-3 gap-3">
-                <p class="w-fit text-color-main group-hover:text-font-white text-[16px] font-poppins font-semibold">
-                    Foodyar
-                </p>
-                <p class="w-fit p-2.5 text-xs text-justify font-poppins text-color-main group-hover:text-font-white rounded-[10px] border border-solid border-color-main">Landing Page</p>
-            </div>
-        </div>
-        <div class="w-[335px] h-[326px] rounded-[10px] bg-[#2C2B2B] hover:bg-[#714AF3] overflow-hidden relative group hover:border hover:border-[#714AF3]">
-            <div class="absolute top-0 left-0 w-full h-[70%] bg-[#3a3a3a] rounded-b-[10px] z-20">
-                <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="/asset/image/portfolio3.png" width="140" alt="">
-            </div>
-            <div class="absolute bottom-0 left-0 w-full h-[30%] bg-[#2C2B2B] group-hover:[background:linear-gradient(180deg,#714AF3_0%,#482F9C_100%)] z-10 flex flex-col justify-center px-3 gap-3">
-                <p class="w-fit text-color-main group-hover:text-font-white text-[16px] font-poppins font-semibold">
-                    Griya Bugar
-                </p>
-                <p class="w-fit p-2.5 text-xs text-justify font-poppins text-color-main group-hover:text-font-white rounded-[10px] border border-solid border-color-main">Aplikasi Mobile</p>
-            </div>
-        </div>
-    </div>
+  </div>
 </section>

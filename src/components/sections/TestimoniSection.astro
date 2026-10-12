@@ -6,7 +6,16 @@ import TestimoniCard from "../common/TestimoniCard";
 
 ---
 
-<section class="w-full h-screen flex flex-col justify-center items-center gap-[42px] mb-24" id="testimoni">
-    <h1 class="font-poppins text-center text-font-white sm:text-[32px] mobile:text-2xl font-medium">Testimoni <span class="text-color-main">Pelanggan</span></h1>
+<section class="flex w-full flex-col items-center gap-8 px-[4%] py-20" id="testimoni">
+    <div class="mx-auto flex w-full max-w-6xl flex-col items-center gap-3 text-center">
+      <p class="font-poppins text-sm text-color-main">Bukti dari klien</p>
+      <h2 class="font-plusjakartaregular text-2xl font-bold text-font-white sm:text-[32px]">Yang dikatakan setelah pekerjaannya selesai</h2>
+      <p class="max-w-2xl font-poppins text-sm text-white/70">Cuplikan chat di bawah ini kami biarkan dekat dengan kalimat aslinya. Kami tidak menambahkan klaim kenaikan penjualan yang tidak mereka ucapkan.</p>
+    </div>
+    <div class="flex flex-wrap items-center justify-center gap-3">
+      <span class="rounded-full border border-white/15 px-4 py-2 font-poppins text-sm text-white/80">Albitec</span>
+      <span class="rounded-full border border-white/15 px-4 py-2 font-poppins text-sm text-white/80">Foodyar</span>
+      <span class="rounded-full border border-white/15 px-4 py-2 font-poppins text-sm text-white/80">Griya Bugar</span>
+    </div>
     <TestimoniCard client:load />
 </section>

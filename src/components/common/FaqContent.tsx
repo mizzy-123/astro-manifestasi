@@ -6,23 +6,24 @@ export default function FaqContent() {
 
   const faqs = [
     {
-      question: "Bagaimana cara memesan project?",
+      question: "Berapa lama proses pembuatannya?",
       answer:
-        "Kamu bisa memesan project dengan menghubungi kami melalui form kontak atau WhatsApp yang tersedia di website.",
+        "Company profile atau landing page biasanya 2–4 minggu. Web app dan e-commerce sekitar 6–12 minggu, tergantung jumlah modul. Aplikasi mobile enterprise mengikuti kompleksitas setelah functional specification disepakati.",
     },
     {
-      question: "Berapa lama pengerjaan project?",
+      question: "Apakah ada biaya maintenance server tahunan?",
       answer:
-        "Waktu pengerjaan tergantung jenis project, biasanya antara 1-4 minggu.",
+        "Ada, dan terpisah dari biaya pembuatan. Domain, server, backup, serta perbaikan di luar masa garansi dibicarakan sebagai maintenance tahunan setelah sistem live.",
     },
     {
-      question: "Apakah bisa revisi?",
-      answer: "Ya, revisi bisa dilakukan sesuai kesepakatan awal project.",
+      question: "Apakah source code sepenuhnya menjadi milik klien?",
+      answer:
+        "Ya. Setelah pelunasan dan serah terima, repositori source code menjadi milik Anda. Sistem tidak dikunci di akun kami.",
     },
     {
-      question: "Apakah ada garansi?",
+      question: "Bagaimana cara memulai?",
       answer:
-        "Kami memberikan garansi support selama 1 bulan setelah project selesai.",
+        "Isi form di bagian bawah atau klik Konsultasi Gratis. Kami bahas alur bisnis dulu, baru menyusun spesifikasi dan penawaran.",
     },
   ];
 
@@ -53,7 +54,7 @@ export default function FaqContent() {
           </button>
           <div
             className={`${
-              openIndexFaq === index ? "max-h-40 pb-7" : "max-h-0"
+              openIndexFaq === index ? "max-h-60 pb-7" : "max-h-0"
             } overflow-hidden px-6 transition-all duration-300 ease-in-out`}
           >
             <p className="text-font-white text-sm">{faq.answer}</p>
