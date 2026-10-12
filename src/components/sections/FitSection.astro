@@ -1,17 +1,17 @@
 ---
 
 const cocok = [
-  "Bisnis yang ingin mengganti rekap manual dengan sistem yang bisa dilacak",
-  "Pemilik usaha yang siap duduk membahas alur kerja dan urutan fitur",
-  "Tim yang butuh website, web app, atau aplikasi mobile sesuai skala operasinya",
-  "Klien yang ingin source code dan cara pakai sistem diserahkan dengan jelas",
+  "Anda ingin berhenti mencatat manual dan beralih ke sistem yang rapi",
+  "Anda bersedia meluangkan waktu untuk berdiskusi tentang kebutuhan bisnis Anda",
+  "Anda butuh website, aplikasi web, atau aplikasi HP yang sesuai ukuran usaha Anda",
+  "Anda ingin hasil kerja beserta file kodenya diserahkan dengan jelas",
 ];
 
 const tidakCocok = [
-  "Klien yang mencari aplikasi sekelas e-commerce nasional dengan budget 1 juta rupiah",
-  "Klien yang tidak mau meluangkan waktu untuk diskusi spesifikasi fitur",
-  "Permintaan semua modul sekaligus tanpa prioritas, lalu diubah total di tengah jalan",
-  "Proyek yang hanya butuh template jadi tanpa penyesuaian alur bisnis",
+  "Anda ingin aplikasi sebesar toko online nasional, tapi budget hanya 1 juta rupiah",
+  "Anda tidak mau meluangkan waktu untuk membahas fitur yang dibutuhkan",
+  "Anda minta semua fitur sekaligus lalu mengubahnya total di tengah jalan",
+  "Anda hanya butuh template siap pakai tanpa penyesuaian",
 ];
 ---
 
@@ -19,15 +19,15 @@ const tidakCocok = [
   <div class="mx-auto w-full max-w-6xl">
     <div class="mb-8 max-w-2xl">
       <h2 class="font-plusjakartaregular text-2xl font-bold text-font-white sm:text-[32px]">
-        Supaya ekspektasinya ketemu dari awal
+        Apakah layanan kami cocok untuk Anda?
       </h2>
       <p class="mt-3 font-poppins text-sm text-white/70 sm:text-base">
-        Filter ini menjaga proyek tetap sehat untuk kedua belah pihak.
+        Kami jujur sejak awal, supaya Anda dan kami sama-sama puas dengan hasilnya.
       </p>
     </div>
     <div class="grid overflow-hidden rounded-2xl border border-white/10 md:grid-cols-2">
       <div class="bg-white/5 p-6">
-        <h3 class="mb-4 font-poppins text-lg font-bold text-[#86efac]">Layanan ini cocok untuk</h3>
+        <h3 class="mb-4 font-poppins text-lg font-bold text-[#86efac]">Cocok, kalau...</h3>
         <ul class="flex flex-col gap-3">
           {cocok.map((item) => (
             <li class="font-poppins text-sm leading-relaxed text-white/80">{item}</li>
@@ -35,7 +35,7 @@ const tidakCocok = [
         </ul>
       </div>
       <div class="border-t border-white/10 bg-[#1a1214] p-6 md:border-l md:border-t-0">
-        <h3 class="mb-4 font-poppins text-lg font-bold text-[#fca5a5]">Layanan ini tidak cocok untuk</h3>
+        <h3 class="mb-4 font-poppins text-lg font-bold text-[#fca5a5]">Kurang cocok, kalau...</h3>
         <ul class="flex flex-col gap-3">
           {tidakCocok.map((item) => (
             <li class="font-poppins text-sm leading-relaxed text-white/80">{item}</li>

@@ -8,22 +8,22 @@ export default function FaqContent() {
     {
       question: "Berapa lama proses pembuatannya?",
       answer:
-        "Company profile atau landing page biasanya 2–4 minggu. Web app dan e-commerce sekitar 6–12 minggu, tergantung jumlah modul. Aplikasi mobile enterprise mengikuti kompleksitas setelah functional specification disepakati.",
+        "Website profil usaha biasanya 2–4 minggu. Toko online atau aplikasi web sekitar 6–12 minggu, tergantung banyaknya fitur. Aplikasi HP dan sistem khusus dihitung setelah daftar kebutuhan kita sepakati.",
     },
     {
       question: "Apakah ada biaya maintenance server tahunan?",
       answer:
-        "Ada, dan terpisah dari biaya pembuatan. Domain, server, backup, serta perbaikan di luar masa garansi dibicarakan sebagai maintenance tahunan setelah sistem live.",
+        "Ada, dan terpisah dari biaya pembuatan. Biaya ini untuk nama website (domain), server, cadangan data, dan perbaikan setelah masa garansi. Besarnya kami jelaskan sebelum Anda memutuskan.",
     },
     {
       question: "Apakah source code sepenuhnya menjadi milik klien?",
       answer:
-        "Ya. Setelah pelunasan dan serah terima, repositori source code menjadi milik Anda. Sistem tidak dikunci di akun kami.",
+        "Ya. Setelah pembayaran lunas, file kode program diserahkan dan menjadi milik Anda sepenuhnya. Anda tidak terikat pada kami untuk memakainya.",
     },
     {
       question: "Bagaimana cara memulai?",
       answer:
-        "Isi form di bagian bawah atau klik Konsultasi Gratis. Kami bahas alur bisnis dulu, baru menyusun spesifikasi dan penawaran.",
+        "Klik Konsultasi Gratis atau isi formulir di bawah. Kita ngobrol dulu soal kebutuhan Anda, baru kami kirim daftar fitur dan penawaran harga.",
     },
   ];
 

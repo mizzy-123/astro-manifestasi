@@ -3,63 +3,63 @@ import { WA_CONSULT, waLink } from "../../lib/whatsapp";
 
 const basic = waLink("Halo, saya ingin diskusi paket Basic untuk company profile atau landing page.");
 const pro = waLink("Halo, saya ingin diskusi paket Pro untuk web app atau e-commerce.");
-const enterprise = waLink("Halo, saya ingin diskusi paket Enterprise untuk aplikasi mobile dan backend kustom.");
+const enterprise = waLink("Halo, saya ingin diskusi paket Enterprise untuk aplikasi HP dan sistem khusus.");
 ---
 
 <section class="w-full bg-background3 px-[4%] py-20" id="harga">
   <div class="mx-auto w-full max-w-6xl">
     <div id="service-text" class="mx-auto mb-12 flex max-w-2xl flex-col items-center gap-3 text-center">
-      <p class="font-poppins text-sm text-color-main">Pilihan layanan</p>
+      <p class="font-poppins text-sm text-color-main">Pilihan paket</p>
       <h2 class="font-plusjakartaregular text-2xl font-bold text-font-white sm:text-[32px]">
-        Tiga jalur, sesuai skala yang ingin Anda jalankan
+        Pilih paket sesuai kebutuhan bisnis Anda
       </h2>
       <p class="font-poppins text-sm text-white/70 sm:text-base">
-        Harga final keluar setelah kebutuhan dipetakan. Paket Pro adalah titik mulai yang paling sering cocok untuk operasional harian.
+        Harga pastinya kami hitung setelah tahu kebutuhan Anda. Paket Pro paling sering dipilih oleh bisnis yang ingin kerjanya lebih rapi.
       </p>
     </div>
 
     <div id="service-content" class="grid items-stretch gap-5 lg:grid-cols-3">
       <article class="flex flex-col rounded-2xl border border-white/10 bg-[#1c1e1e] p-6">
         <p class="font-poppins text-sm text-white/60">Basic</p>
-        <h3 class="mt-1 font-poppins text-xl font-bold text-font-white">Company Profile / Landing Page</h3>
-        <p class="mt-3 font-poppins text-sm leading-relaxed text-white/70">Cocok untuk bisnis baru yang butuh presensi digital cepat, dengan satu ajakan yang jelas.</p>
+        <h3 class="mt-1 font-poppins text-xl font-bold text-font-white">Website Profil Usaha</h3>
+        <p class="mt-3 font-poppins text-sm leading-relaxed text-white/70">Cocok untuk bisnis baru yang ingin segera punya website agar mudah ditemukan dan dihubungi pelanggan.</p>
         <ul class="mt-5 flex flex-1 flex-col gap-2 font-poppins text-sm text-white/80">
-          <li>Halaman profil atau landing fokus konversi</li>
-          <li>Tampilan responsif</li>
-          <li>Tombol WhatsApp atau form singkat</li>
-          <li>Serah terima source code</li>
+          <li>Website profil usaha atau halaman promosi</li>
+          <li>Nyaman dibuka di HP dan laptop</li>
+          <li>Tombol langsung ke WhatsApp</li>
+          <li>File kode program diserahkan ke Anda</li>
         </ul>
-        <a class="mt-6 inline-flex h-12 items-center justify-center rounded-[10px] border border-white/20 font-poppins text-sm font-bold text-font-white" href={basic} target="_blank" rel="noopener noreferrer">Diskusi paket Basic</a>
+        <a class="mt-6 inline-flex h-12 items-center justify-center rounded-[10px] border border-white/20 font-poppins text-sm font-bold text-font-white" href={basic} target="_blank" rel="noopener noreferrer">Tanya paket Basic</a>
       </article>
 
       <article class="relative flex flex-col rounded-2xl border border-color-main bg-gradient-to-b from-[#3a2a78] to-[#241848] p-6 shadow-[0_16px_40px_rgba(117,77,251,0.28)] lg:-translate-y-3">
         <span class="absolute -top-3 left-6 rounded-full bg-font-white px-3 py-1 font-poppins text-xs font-bold text-[#452E95]">Paling sering dipilih</span>
         <p class="font-poppins text-sm text-white/80">Pro</p>
-        <h3 class="mt-1 font-poppins text-xl font-bold text-font-white">Web App / E-Commerce</h3>
-        <p class="mt-3 font-poppins text-sm leading-relaxed text-white/85">Fokus ke operasional: stok, pembayaran, dan alur yang menggantikan rekap manual.</p>
+        <h3 class="mt-1 font-poppins text-xl font-bold text-font-white">Toko Online & Aplikasi Web</h3>
+        <p class="mt-3 font-poppins text-sm leading-relaxed text-white/85">Untuk bisnis yang ingin berjualan online dan merapikan pencatatan, tanpa repot catat manual.</p>
         <ul class="mt-5 flex flex-1 flex-col gap-2 font-poppins text-sm text-white">
-          <li>Manajemen stok dan status pesanan</li>
-          <li>Payment gateway</li>
-          <li>Verifikasi KYC otomatis, bila alurnya membutuhkan</li>
-          <li>Escrow, bila transaksi Anda memang menahan dana</li>
-          <li>Dashboard untuk pemilik usaha</li>
+          <li>Pencatatan stok dan status pesanan</li>
+          <li>Pembayaran online (QRIS, transfer bank, e-wallet)</li>
+          <li>Halaman laporan penjualan untuk pemilik</li>
+          <li>Opsional: verifikasi identitas pengguna (KTP)</li>
+          <li>Opsional: dana pembeli ditahan dulu sampai pesanan selesai</li>
         </ul>
         <a class="mt-6 inline-flex h-12 items-center justify-center rounded-[10px] bg-font-white font-poppins text-sm font-bold text-[#452E95]" href={pro} target="_blank" rel="noopener noreferrer">Mulai dari paket ini</a>
       </article>
 
       <article class="flex flex-col rounded-2xl border border-white/10 bg-[#1c1e1e] p-6">
         <p class="font-poppins text-sm text-white/60">Enterprise</p>
-        <h3 class="mt-1 font-poppins text-xl font-bold text-font-white">Custom Mobile App & Backend</h3>
-        <p class="mt-3 font-poppins text-sm leading-relaxed text-white/70">Aplikasi native dan backend yang disusun dari nol untuk alur korporat yang tidak muat di template.</p>
+        <h3 class="mt-1 font-poppins text-xl font-bold text-font-white">Aplikasi HP & Sistem Khusus</h3>
+        <p class="mt-3 font-poppins text-sm leading-relaxed text-white/70">Untuk perusahaan yang butuh aplikasi Android dan sistem yang dibuat dari nol sesuai cara kerja mereka.</p>
         <ul class="mt-5 flex flex-1 flex-col gap-2 font-poppins text-sm text-white/80">
-          <li>Android native dengan Kotlin dan Jetpack Compose</li>
-          <li>Backend khusus dan API sesuai peran pengguna</li>
-          <li>Docker dan PostgreSQL</li>
-          <li>Spesifikasi dan serah terima repositori</li>
+          <li>Aplikasi Android yang dibuat khusus</li>
+          <li>Sistem di belakang layar yang menyesuaikan kebutuhan Anda</li>
+          <li>Penyimpanan data yang rapi dan andal</li>
+          <li>Dokumen kebutuhan dan serah terima kode program</li>
         </ul>
-        <a class="mt-6 inline-flex h-12 items-center justify-center rounded-[10px] border border-white/20 font-poppins text-sm font-bold text-font-white" href={enterprise} target="_blank" rel="noopener noreferrer">Diskusi skala enterprise</a>
+        <a class="mt-6 inline-flex h-12 items-center justify-center rounded-[10px] border border-white/20 font-poppins text-sm font-bold text-font-white" href={enterprise} target="_blank" rel="noopener noreferrer">Tanya paket Enterprise</a>
       </article>
     </div>
-    <p class="mt-6 text-center font-poppins text-xs text-white/50">Butuh arah dulu? <a class="text-color-main" href={WA_CONSULT} target="_blank" rel="noopener noreferrer">Konsultasi gratis</a> sebelum memilih paket.</p>
+    <p class="mt-6 text-center font-poppins text-xs text-white/50">Masih bingung memilih? <a class="text-color-main" href={WA_CONSULT} target="_blank" rel="noopener noreferrer">Konsultasi gratis</a> dulu, kami bantu pilihkan.</p>
   </div>
 </section>

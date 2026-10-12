@@ -2,9 +2,9 @@ import { useState, type FormEvent } from "react";
 import { waLink } from "../../lib/whatsapp";
 
 const jenisOptions = [
-  "Company Profile / Landing Page",
-  "Web App / E-Commerce",
-  "Aplikasi Mobile & Backend",
+  "Website profil usaha",
+  "Toko online / aplikasi web",
+  "Aplikasi HP / sistem khusus",
   "Belum tahu, ingin diskusi dulu",
 ];
 
@@ -32,7 +32,7 @@ export default function ContactForm() {
         />
       </label>
       <label className="flex flex-col gap-1.5">
-        <span className="font-poppins text-sm text-white/80">Jenis proyek</span>
+        <span className="font-poppins text-sm text-white/80">Anda butuh apa?</span>
         <select
           value={jenis}
           onChange={(e) => setJenis(e.target.value)}
@@ -44,21 +44,21 @@ export default function ContactForm() {
         </select>
       </label>
       <label className="flex flex-col gap-1.5">
-        <span className="font-poppins text-sm text-white/80">Yang ingin dibahas</span>
+        <span className="font-poppins text-sm text-white/80">Ceritakan singkat</span>
         <textarea
           required
           value={pesan}
           onChange={(e) => setPesan(e.target.value)}
           rows={4}
           className="rounded-[10px] border border-white/15 bg-[#1c1e1e] px-3 py-3 font-poppins text-sm text-font-white outline-none focus:border-color-main"
-          placeholder="Ceritakan alur yang sekarang masih manual atau lambat."
+          placeholder="Contoh: saya punya toko dan ingin pembeli bisa pesan dan bayar online."
         />
       </label>
       <button
         type="submit"
         className="h-12 rounded-[10px] bg-gradient-to-r from-[#754DFB] to-[#452E95] font-poppins text-sm font-bold text-font-white"
       >
-        Diskusi proyek di WhatsApp
+        Kirim lewat WhatsApp
       </button>
     </form>
   );
