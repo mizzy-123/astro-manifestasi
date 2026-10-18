@@ -1,4 +1,5 @@
 ---
+import TeamFan from "../common/TeamFan";
 
 const stack = ["Laravel", "Node.js", "Kotlin", "Jetpack Compose", "Docker", "PostgreSQL", "React", "Next.js"];
 ---
@@ -26,28 +27,6 @@ const stack = ["Laravel", "Node.js", "Kotlin", "Jetpack Compose", "Docker", "Pos
       </ul>
     </div>
 
-    <div class="grid grid-cols-3 gap-3">
-      <figure class="overflow-hidden rounded-2xl bg-[#2C2B2B]">
-        <img class="h-52 w-full object-contain object-bottom sm:h-64" src="/asset/image/mizzy.png" alt="Mizzy, fullstack developer" />
-        <figcaption class="px-2 py-3 text-center">
-          <p class="font-poppins text-sm font-bold text-font-white">Mizzy</p>
-          <p class="font-poppins text-[11px] text-color-main">Website & sistem</p>
-        </figcaption>
-      </figure>
-      <figure class="overflow-hidden rounded-2xl bg-[#2C2B2B]">
-        <img class="h-52 w-full object-contain object-bottom sm:h-64" src="/asset/image/eka.png" alt="Eka, mobile developer" />
-        <figcaption class="px-2 py-3 text-center">
-          <p class="font-poppins text-sm font-bold text-font-white">Eka</p>
-          <p class="font-poppins text-[11px] text-color-main">Aplikasi HP</p>
-        </figcaption>
-      </figure>
-      <figure class="overflow-hidden rounded-2xl bg-[#2C2B2B]">
-        <img class="h-52 w-full object-contain object-bottom sm:h-64" src="/asset/image/naufal.png" alt="Naufal, UI dan frontend" />
-        <figcaption class="px-2 py-3 text-center">
-          <p class="font-poppins text-sm font-bold text-font-white">Naufal</p>
-          <p class="font-poppins text-[11px] text-color-main">Desain & tampilan</p>
-        </figcaption>
-      </figure>
-    </div>
+    <TeamFan client:load />
   </div>
 </section>
