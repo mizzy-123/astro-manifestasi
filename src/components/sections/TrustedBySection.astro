@@ -1,0 +1,43 @@
+---
+const clients = [
+  {
+    name: "PT Karya Solusi Prima Sejahtera (KSPS)",
+    src: "/asset/image/logo_ksps.png",
+    imgClass: "h-12 w-auto sm:h-14",
+  },
+  {
+    name: "Dinas Kelautan Provinsi Jawa Tengah",
+    src: "/asset/image/logo_dkp.png",
+    imgClass: "h-16 w-auto sm:h-20",
+  },
+  {
+    name: "DPMPTSP Kota Semarang",
+    src: "/asset/image/logo_dpmtpsp.png",
+    imgClass: "h-14 w-auto sm:h-16",
+  },
+  {
+    name: "Undip",
+    src: "/asset/image/logo_undip.png",
+    imgClass: "h-16 w-16 rounded-full bg-white object-contain p-1 sm:h-20 sm:w-20",
+  },
+];
+---
+
+<section class="w-full border-y border-white/10 px-[4%] py-12" id="klien" aria-labelledby="trusted-heading">
+  <div class="mx-auto flex w-full max-w-6xl flex-col items-center gap-8">
+    <h2 id="trusted-heading" class="text-center font-poppins text-sm text-white/70 sm:text-base">
+      Manifestasi sudah dipercaya oleh
+    </h2>
+
+    <ul class="flex w-full flex-wrap items-start justify-center gap-x-10 gap-y-8 sm:gap-x-14">
+      {clients.map((client) => (
+        <li class="flex w-36 flex-col items-center gap-3 sm:w-44">
+          <div class="flex h-16 items-center justify-center sm:h-20">
+            <img class:list={["object-contain", client.imgClass]} src={client.src} alt={client.name} />
+          </div>
+          <p class="text-center font-poppins text-xs leading-snug text-white/60">{client.name}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
