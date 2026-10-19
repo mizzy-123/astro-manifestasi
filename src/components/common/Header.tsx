@@ -121,6 +121,7 @@ export function Header() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Konsultasi Gratis"
+          data-cta="header_konsultasi_mobile"
         >
           <FaWhatsapp size={18} />
         </a>
@@ -129,6 +130,7 @@ export function Header() {
           href={WA_CONSULT}
           target="_blank"
           rel="noopener noreferrer"
+          data-cta="header_konsultasi"
         >
           Konsultasi Gratis
         </a>
@@ -169,6 +171,7 @@ export function Header() {
             href={WA_CONSULT}
             target="_blank"
             rel="noopener noreferrer"
+            data-cta="header_konsultasi_menu"
           >
             Konsultasi Gratis
           </a>

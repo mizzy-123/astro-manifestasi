@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import WhatsAppFab from "../components/common/WhatsAppFab.astro";
 const { pageTitle } = Astro.props;
 ---
 
@@ -28,12 +29,23 @@ const { pageTitle } = Astro.props;
 		<meta name="twitter:image" content="https://manifestasi.my.id/asset/image/logo.png">
 
 		<!-- Google tag (gtag.js) -->
-		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-6TF2ESZLRE"></script>
+		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-FQ81GDJGGS"></script>
 		<script is:inline>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
-			gtag('config', 'G-6TF2ESZLRE');
+			gtag('config', 'G-FQ81GDJGGS');
+		</script>
+		<script is:inline>
+			document.addEventListener("click", (event) => {
+				const target = event.target instanceof Element ? event.target.closest("[data-cta]") : null;
+				if (!target || typeof gtag !== "function") return;
+				const label = (target.getAttribute("aria-label") || target.textContent || "").replace(/\s+/g, " ").trim();
+				gtag("event", "cta_click", {
+					cta_name: target.getAttribute("data-cta"),
+					cta_label: label.slice(0, 80),
+				});
+			});
 		</script>
 
 		<script is:inline type="application/ld+json">
@@ -106,6 +118,7 @@ const { pageTitle } = Astro.props;
 		<main>
 			<slot />
 		</main>
+		<WhatsAppFab />
 
 	</body>
 </html>

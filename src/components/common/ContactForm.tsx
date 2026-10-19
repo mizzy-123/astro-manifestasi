@@ -56,6 +56,7 @@ export default function ContactForm() {
       </label>
       <button
         type="submit"
+        data-cta="kontak_kirim_whatsapp"
         className="h-12 rounded-[10px] bg-gradient-to-r from-[#754DFB] to-[#452E95] font-poppins text-sm font-bold text-font-white"
       >
         Kirim lewat WhatsApp
