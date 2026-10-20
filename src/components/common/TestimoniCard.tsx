@@ -30,6 +30,27 @@ export default function TestimoniCard() {
         "Mas ini udah oke bagus banget, maaf ya mas semalam ketiduran pas buka",
       name: "Muqaromah",
     },
+    {
+      testimoni:
+        "Aman mas, sesuai ekspektasi, nanti kalau partneran terus bisa jadi jangka panjang, karena sudah terbiasa kerja sama dengana tim masnya",
+      name: "Ahmad",
+    },
+    {
+      testimoni:
+        "Bagus seneng aku sama design mu",
+      name: "Yogi",
+    },
+    {
+      testimoni:
+        "Top, terlalu lengkap isinya",
+      name: "Yaya",
+    },
+    {
+      testimoni:
+        "Ini udah bagus banget mas, perubahannya udah banyak gak seperti website gemilang yang sebelumnya",
+      name: "Rizky",
+    },
+    
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
